@@ -1,0 +1,31 @@
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+  
+  }
+  
+  .right {
+    right: 0;
+    background: url('https://s3-alpha-sig.figma.com/img/db76/f400/bfc6b5b7f61fc0e640b1e625b42d7708?Expires=1703462400&Signature=ePO6e9Z-qVttSWSyCVViDoXxbvO5tom1UN27T27f21GYGbgr21Z6KClfXf1rV0xhrz00q~Vmq2J80d0GaCEDLpgA8VQZ8mQ1HNW9ARyTPuiaQvMd~1GE4EQoXbX-v68bdorYxYJn2nCFczF~t24HLaeviz7QexYh2FGuQ5tIJvDTWo~pM3HWqohJrch6qPDZnUxH-m~QkbCzBuOJxosEH28O1XweEFjJ8vbLVFYU2VyDBiW0iQH2xWr7fbrj4uqdVNR4qkvzfc7lRDPaCgh4LpeEST8Qf8FJjzMcp9013VMzmbrCp8dzl4TYMS9~P9n~KURRvVPhbee7uQ4PUqrwdQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-size: cover;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+   
+  }
+  
+  

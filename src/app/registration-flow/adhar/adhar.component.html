@@ -1,0 +1,62 @@
+<div class="split left">
+    <div class="centered">
+        <div class="btn-container">
+            <button style="background: transparent;border: none;" routerLink="/verification"><img class="icon"
+                src="./assets/zondicons_arrow-left.svg" alt=""></button>
+          </div>
+          <div class="container">
+            <p class="mobile">KYC details</p>
+            <p class="intro-content">Please do your kyc to book your vehicle.</p><br>
+            <form action="" [formGroup]="personalForm">
+              <label class="f-name">Aadhar no.</label><br>
+             
+              <input type= "number" placeholder="Enter Aadhar no." class="otp" formControlName="adharno" >
+              <div *ngIf="personalForm.get('adharno')?.invalid && personalForm.get('adharno')?.touched"  style="color: red;">
+                <div  *ngIf="personalForm.get('adharno')?.hasError('adharno')">adharno required</div>
+          
+              </div>
+              <div class="button-wrap">
+                <label class="button" for="adhar">Upload File</label>
+                <input id="adhar" type="file" (change)="onFileSelected($event,'adhar')" formControlName="adharfile" >
+               
+              </div>
+              <label class="f-name">Driving license no.</label><br>
+              <input placeholder="0000 0000 0000" class="otp" formControlName="licenseno">
+              <div *ngIf="personalForm.get('licenseno')?.invalid && personalForm.get('licenseno')?.touched"  style="color: red;">
+                <div  *ngIf="personalForm.get('licenseno')?.hasError('licenseno')">adharno required</div>
+          
+              </div>
+              <div class="button-wrap">
+                <label class="button" for="license">Upload Files</label>
+                <input id="license" type="file" (change)="onFileSelected($event,'licence')" formControlName="licensefile" >
+            
+              </div>
+                
+              <label class="f-name">Pan no..</label><br>
+              <input placeholder="0000 0000 0000" class="otp" formControlName="panno">
+              <div *ngIf="personalForm.get('panno')?.invalid && personalForm.get('panno')?.touched"  style="color: red;">
+                <div  *ngIf="personalForm.get('panno')?.hasError('panno')">adharno required</div>
+          
+              </div>
+                <div class="button-wrap">
+                  <label class="button" for="pan">Upload File</label>
+                <input id="pan" type="file" (change)="onFileSelected($event,'adhar')" formControlName="panfile" >
+              
+              </div>
+          
+              <div class="continue-btn-container">
+                <button  class="continue" (click)="myupload()"   >Continue</button>
+              </div>
+             
+              </form>
+          
+            
+          
+    </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+
+  </div>
+</div>
